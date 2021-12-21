@@ -230,7 +230,7 @@ class StacktraceFrame implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'abs_path' => $this->absPath,

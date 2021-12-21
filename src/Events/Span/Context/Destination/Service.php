@@ -68,7 +68,7 @@ final class Service implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'type' => Encoding::keywordField($this->type),

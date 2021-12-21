@@ -59,7 +59,7 @@ final class Container implements \JsonSerializable
     /**
      * @return array|null
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         if (null === $this->id) {
             return null;

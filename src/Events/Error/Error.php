@@ -85,7 +85,7 @@ final class Error extends TraceableEvent
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'error' => array_merge(

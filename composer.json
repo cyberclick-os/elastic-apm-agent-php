@@ -1,5 +1,5 @@
 {
-  "name": "zoilomora/elastic-apm-agent-php",
+  "name": "cyberclick-os/elastic-apm-agent-php",
   "description": "Elastic APM agent for PHP",
   "license": "MIT",
   "type": "library",

@@ -20,7 +20,7 @@ abstract class Collection implements \Iterator, \Countable, \JsonSerializable
     /**
      * @return mixed
      */
-    public function current()
+    public function current(): mixed
     {
         return \current($this->items);
     }
@@ -28,7 +28,7 @@ abstract class Collection implements \Iterator, \Countable, \JsonSerializable
     /**
      * @return void
      */
-    public function next()
+    public function next(): void
     {
         \next($this->items);
     }
@@ -36,7 +36,7 @@ abstract class Collection implements \Iterator, \Countable, \JsonSerializable
     /**
      * @return int|mixed|string|null
      */
-    public function key()
+    public function key(): mixed
     {
         return \key($this->items);
     }
@@ -44,7 +44,7 @@ abstract class Collection implements \Iterator, \Countable, \JsonSerializable
     /**
      * @return bool
      */
-    public function valid()
+    public function valid(): bool
     {
         return \array_key_exists($this->key(), $this->items);
     }
@@ -52,7 +52,7 @@ abstract class Collection implements \Iterator, \Countable, \JsonSerializable
     /**
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
         \reset($this->items);
     }
@@ -60,7 +60,7 @@ abstract class Collection implements \Iterator, \Countable, \JsonSerializable
     /**
      * @return int|void
      */
-    public function count()
+    public function count(): int
     {
         return \count($this->items);
     }
@@ -68,7 +68,7 @@ abstract class Collection implements \Iterator, \Countable, \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return $this->items;
     }

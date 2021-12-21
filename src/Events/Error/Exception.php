@@ -159,7 +159,7 @@ final class Exception implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'code' => Encoding::keywordField($this->code),

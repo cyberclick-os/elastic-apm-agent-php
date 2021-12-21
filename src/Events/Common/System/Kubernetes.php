@@ -71,7 +71,7 @@ final class Kubernetes implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'namespace' => Encoding::keywordField($this->namespace),

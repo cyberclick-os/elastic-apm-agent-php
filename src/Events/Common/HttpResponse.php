@@ -104,7 +104,7 @@ class HttpResponse implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'status_code' => $this->statusCode,

@@ -42,7 +42,7 @@ final class Node implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'name' => Encoding::keywordField($this->name),

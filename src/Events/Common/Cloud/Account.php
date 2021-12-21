@@ -49,7 +49,7 @@ final class Account implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'id' => Encoding::keywordField($this->id),

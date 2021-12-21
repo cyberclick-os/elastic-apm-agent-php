@@ -260,7 +260,7 @@ final class Url implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'raw' => Encoding::keywordField($this->raw),

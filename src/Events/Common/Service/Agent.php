@@ -7,7 +7,7 @@ use ZoiloMora\ElasticAPM\Helper\Encoding;
 final class Agent implements \JsonSerializable
 {
     const NAME = 'zoilomora/elastic-apm-agent-php';
-    const VERSION = '1.0.0';
+    const VERSION = '1.0.1';
 
     /**
      * Name of the Elastic APM agent, e.g. "Python"
@@ -80,7 +80,7 @@ final class Agent implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'name' => Encoding::keywordField($this->name),

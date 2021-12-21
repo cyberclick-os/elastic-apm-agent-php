@@ -148,7 +148,7 @@ abstract class TraceableEvent extends Event
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return array_merge(
             parent::jsonSerialize(),

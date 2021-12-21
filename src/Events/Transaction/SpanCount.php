@@ -47,7 +47,7 @@ final class SpanCount implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'started' => $this->started,

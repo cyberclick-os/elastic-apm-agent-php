@@ -188,7 +188,7 @@ class Service implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'agent' => $this->agent,

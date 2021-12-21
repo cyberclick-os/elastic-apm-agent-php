@@ -74,7 +74,7 @@ final class Destination implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'address' => Encoding::keywordField($this->address),

@@ -140,7 +140,7 @@ class System implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'architecture' => Encoding::keywordField($this->architecture),

@@ -29,7 +29,7 @@ final class Samples extends Collection
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $result = [];
 

@@ -55,7 +55,7 @@ final class MetricSet implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $payload = [
             'timestamp' => $this->timestamp,

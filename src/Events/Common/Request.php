@@ -269,7 +269,7 @@ class Request implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'body' => $this->body,

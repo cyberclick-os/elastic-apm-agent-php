@@ -39,7 +39,7 @@ final class Age implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'ms' => $this->ms,

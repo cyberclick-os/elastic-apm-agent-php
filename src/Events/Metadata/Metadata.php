@@ -135,7 +135,7 @@ final class Metadata implements \JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'metadata' => [

@@ -61,7 +61,7 @@ final class Response extends HttpResponse
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return array_merge(
             parent::jsonSerialize(),
