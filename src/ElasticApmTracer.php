@@ -259,4 +259,9 @@ final class ElasticApmTracer
             ? $lastTransaction
             : $lastSpan;
     }
+
+    public function getTransactionPoolCount(): int
+    {
+        return $this->transactionPool->count();
+    }
 }

@@ -22,4 +22,6 @@ interface TransactionPool
      * @return Transaction|null
      */
     public function findLastUnfinished();
+
+    public function count(): int;
 }

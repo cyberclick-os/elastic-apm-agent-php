@@ -55,4 +55,10 @@ final class MemoryTransactionPool extends MemoryPool implements TransactionPool
 
         return null;
     }
+
+
+    public function count(): int
+    {
+        return count($this->items);
+    }
 }
