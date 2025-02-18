@@ -38,7 +38,7 @@ class Process implements \JsonSerializable
      * @param string|null $title
      * @param array|null $argv
      */
-    public function __construct($pid, $ppid = null, $title = null, array $argv = null)
+    public function __construct($pid, $ppid = null, $title = null, ?array $argv = null)
     {
         $this->assertArgv($argv);
 

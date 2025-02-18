@@ -78,14 +78,14 @@ class Service implements \JsonSerializable
      * @param Node|null $node
      */
     public function __construct(
-        Agent $agent = null,
-        Framework $framework = null,
-        Language $language = null,
+        ?Agent $agent = null,
+        ?Framework $framework = null,
+        ?Language $language = null,
         $name = null,
         $environment = null,
-        Runtime $runtime = null,
+        ?Runtime $runtime = null,
         $version = null,
-        Node $node = null
+        ?Node $node = null
     ) {
         $this->agent = $this->validateAgent($agent);
         $this->framework = $framework;

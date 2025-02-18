@@ -63,8 +63,8 @@ class System implements \JsonSerializable
         $detectedHostname = null,
         $configuredHostname = null,
         $platform = null,
-        Container $container = null,
-        Kubernetes $kubernetes = null
+        ?Container $container = null,
+        ?Kubernetes $kubernetes = null
     ) {
         $this->architecture = $architecture;
         $this->detectedHostname = $detectedHostname;

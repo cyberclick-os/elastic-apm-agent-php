@@ -33,7 +33,7 @@ final class Kubernetes implements \JsonSerializable
      * @param Pod|null $pod
      * @param Node|null $node
      */
-    public function __construct($namespace = null, Pod $pod = null, Node $node = null)
+    public function __construct($namespace = null, ?Pod $pod = null, ?Node $node = null)
     {
         $this->namespace = $namespace;
         $this->pod = $pod;

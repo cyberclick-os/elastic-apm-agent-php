@@ -41,7 +41,7 @@ final class DistributedTracing
      *
      * @return void
      */
-    public static function fakeDistributedTracing(DistributedTracing $fakeDistributedTracing = null)
+    public static function fakeDistributedTracing(?DistributedTracing $fakeDistributedTracing = null)
     {
         self::$fakeDistributedTracing = $fakeDistributedTracing;
     }

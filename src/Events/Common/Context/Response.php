@@ -29,7 +29,7 @@ final class Response extends HttpResponse
      */
     public function __construct(
         $finished = null,
-        array $headers = null,
+        ?array $headers = null,
         $headersSent = null,
         $statusCode = null,
         $transferSize = null,

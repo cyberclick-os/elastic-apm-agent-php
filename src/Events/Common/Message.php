@@ -44,9 +44,9 @@ class Message implements \JsonSerializable
      */
     public function __construct(
         Queue $queue,
-        Age $age = null,
+        ?Age $age = null,
         $body = null,
-        array $headers = null
+        ?array $headers = null
     ) {
         $this->queue = $queue;
         $this->age = $age;

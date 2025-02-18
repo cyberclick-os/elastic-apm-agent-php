@@ -40,7 +40,7 @@ final class Destination implements \JsonSerializable
      * @param int|null $port
      * @param Service|null $service
      */
-    public function __construct($address, $port, Service $service = null)
+    public function __construct($address, $port, ?Service $service = null)
     {
         $this->address = $address;
         $this->port = $port;

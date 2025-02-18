@@ -56,11 +56,11 @@ final class Metadata implements \JsonSerializable
      */
     public function __construct(
         Service $service,
-        Process $process = null,
-        System $system = null,
-        User $user = null,
-        Cloud $cloud = null,
-        Tags $labels = null
+        ?Process $process = null,
+        ?System $system = null,
+        ?User $user = null,
+        ?Cloud $cloud = null,
+        ?Tags $labels = null
     ) {
         $this->service = $service;
         $this->process = $process;

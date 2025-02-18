@@ -59,12 +59,12 @@ class Context implements \JsonSerializable
      * @param Message|null $message
      */
     public function __construct(
-        array $custom = null,
-        Response $response = null,
-        Request $request = null,
-        Tags $tags = null,
-        User $user = null,
-        Message $message = null
+        ?array $custom = null,
+        ?Response $response = null,
+        ?Request $request = null,
+        ?Tags $tags = null,
+        ?User $user = null,
+        ?Message $message = null
     ) {
         $this->setCustom($custom);
         $this->setResponse($response);
@@ -87,7 +87,7 @@ class Context implements \JsonSerializable
      *
      * @return void
      */
-    public function setCustom(array $custom = null)
+    public function setCustom(?array $custom = null)
     {
         $this->custom = $custom;
     }
@@ -105,7 +105,7 @@ class Context implements \JsonSerializable
      *
      * @return void
      */
-    public function setResponse(Response $response = null)
+    public function setResponse(?Response $response = null)
     {
         $this->response = $response;
     }
@@ -123,7 +123,7 @@ class Context implements \JsonSerializable
      *
      * @return void
      */
-    public function setRequest(Request $request = null)
+    public function setRequest(?Request $request = null)
     {
         $this->request = $request;
     }
@@ -141,7 +141,7 @@ class Context implements \JsonSerializable
      *
      * @return void
      */
-    public function setTags(Tags $tags = null)
+    public function setTags(?Tags $tags = null)
     {
         $this->tags = $tags;
     }
@@ -159,7 +159,7 @@ class Context implements \JsonSerializable
      *
      * @return void
      */
-    public function setUser(User $user = null)
+    public function setUser(?User $user = null)
     {
         $this->user = $user;
     }
@@ -177,7 +177,7 @@ class Context implements \JsonSerializable
      *
      * @return void
      */
-    public function setMessage(Message $message = null)
+    public function setMessage(?Message $message = null)
     {
         $this->message = $message;
     }

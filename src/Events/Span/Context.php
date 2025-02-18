@@ -58,11 +58,11 @@ final class Context implements \JsonSerializable
      * @param Message|null $message
      */
     public function __construct(
-        Destination $destination = null,
-        Db $db = null,
-        Http $http = null,
-        Tags $tags = null,
-        Message $message = null
+        ?Destination $destination = null,
+        ?Db $db = null,
+        ?Http $http = null,
+        ?Tags $tags = null,
+        ?Message $message = null
     ) {
         $this->setDestination($destination);
         $this->setDb($db);
@@ -112,7 +112,7 @@ final class Context implements \JsonSerializable
     /**
      * @param Destination|null $destination
      */
-    public function setDestination(Destination $destination = null)
+    public function setDestination(?Destination $destination = null)
     {
         $this->destination = $destination;
     }
@@ -128,7 +128,7 @@ final class Context implements \JsonSerializable
     /**
      * @param Db|null $db
      */
-    public function setDb(Db $db = null)
+    public function setDb(?Db $db = null)
     {
         $this->db = $db;
     }
@@ -144,7 +144,7 @@ final class Context implements \JsonSerializable
     /**
      * @param Http|null $http
      */
-    public function setHttp(Http $http = null)
+    public function setHttp(?Http $http = null)
     {
         $this->http = $http;
     }
@@ -160,7 +160,7 @@ final class Context implements \JsonSerializable
     /**
      * @param Tags|null $tags
      */
-    public function setTags(Tags $tags = null)
+    public function setTags(?Tags $tags = null)
     {
         $this->tags = $tags;
     }
@@ -176,7 +176,7 @@ final class Context implements \JsonSerializable
     /**
      * @param Message|null $message
      */
-    public function setMessage(Message $message = null)
+    public function setMessage(?Message $message = null)
     {
         $this->message = $message;
     }

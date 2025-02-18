@@ -52,7 +52,7 @@ class HttpResponse implements \JsonSerializable
         $transferSize = null,
         $encodedBodySize = null,
         $decodedBodySize = null,
-        array $headers = null
+        ?array $headers = null
     ) {
         $this->statusCode = $statusCode;
         $this->transferSize = $transferSize;

@@ -114,9 +114,9 @@ class StacktraceFrame implements \JsonSerializable
         $libraryFrame = null,
         $lineno = null,
         $module = null,
-        array $postContext = null,
-        array $preContext = null,
-        array $vars = null
+        ?array $postContext = null,
+        ?array $preContext = null,
+        ?array $vars = null
     ) {
         $this->absPath = $absPath;
         $this->colno = $colno;

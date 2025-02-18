@@ -42,8 +42,8 @@ final class MetricSet implements \JsonSerializable
         $timestamp,
         Samples $samples,
         Transaction $transaction,
-        Span $span = null,
-        Tags $tags = null
+        ?Span $span = null,
+        ?Tags $tags = null
     ) {
         $this->timestamp = (int) $timestamp;
         $this->samples = $samples;

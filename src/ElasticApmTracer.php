@@ -131,7 +131,7 @@ final class ElasticApmTracer
         $type,
         $subtype = null,
         $action = null,
-        Events\Span\Context $context = null,
+        ?Events\Span\Context $context = null,
         $stacktraceSkip = 1
     ) {
         $stacktrace = Stacktrace::getDebugBacktrace(
@@ -171,7 +171,7 @@ final class ElasticApmTracer
      *
      * @throws \Exception
      */
-    public function captureException($exception, Context $context = null)
+    public function captureException($exception, ?Context $context = null)
     {
         $lastTransaction = $this->transactionPool->findLastUnfinished();
         if (null === $lastTransaction) {

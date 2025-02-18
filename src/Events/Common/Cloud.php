@@ -62,11 +62,11 @@ final class Cloud implements \JsonSerializable
      */
     public function __construct(
         $provider = null,
-        Account $account = null,
+        ?Account $account = null,
         $availabilityZone = null,
-        Instance $instance = null,
-        Machine $machine = null,
-        Project $project = null,
+        ?Instance $instance = null,
+        ?Machine $machine = null,
+        ?Project $project = null,
         $region = null
     ) {
         $this->provider = $provider;

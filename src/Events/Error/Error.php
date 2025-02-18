@@ -54,7 +54,7 @@ final class Error extends TraceableEvent
         $traceId,
         $parentId,
         $exception,
-        Context $context = null,
+        ?Context $context = null,
         $transactionId = null
     ) {
         parent::__construct($traceId, $parentId);

@@ -83,10 +83,10 @@ class Request implements \JsonSerializable
         Url $url,
         $body = null,
         $env = null,
-        array $headers = null,
+        ?array $headers = null,
         $httpVersion = null,
-        Socket $socket = null,
-        array $cookies = null
+        ?Socket $socket = null,
+        ?array $cookies = null
     ) {
         $this->body = $body;
         $this->env = $env;

@@ -24,10 +24,10 @@ final class Service extends ServiceBase
         $name,
         Language $language,
         Runtime $runtime,
-        Framework $framework = null,
+        ?Framework $framework = null,
         $environment = null,
         $version = null,
-        Node $node = null
+        ?Node $node = null
     ) {
         parent::__construct(null, $framework, $language, $name, $environment, $runtime, $version, $node);
 

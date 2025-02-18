@@ -72,10 +72,10 @@ final class Exception implements \JsonSerializable
         $message = null,
         $module = null,
         $attributes = null,
-        array $stacktrace = null,
+        ?array $stacktrace = null,
         $type = null,
         $handled = null,
-        array $cause = null
+        ?array $cause = null
     ) {
         if (null === $message && null === $type) {
             throw new \InvalidArgumentException('At least one of the fields (message, type) must be a string.');
@@ -101,7 +101,7 @@ final class Exception implements \JsonSerializable
      *
      * @throws \InvalidArgumentException
      */
-    private function assertInstanceOfElements($class, array $elements = null)
+    private function assertInstanceOfElements($class, ?array $elements = null)
     {
         if (null === $elements) {
             return;

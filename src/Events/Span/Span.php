@@ -88,7 +88,7 @@ final class Span extends TraceableEvent
         $subtype = null,
         $transactionId = null,
         $action = null,
-        Context $context = null,
+        ?Context $context = null,
         $stacktrace = null
     ) {
         parent::__construct($traceId, $parentId);
